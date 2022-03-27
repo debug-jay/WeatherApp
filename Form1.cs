@@ -41,7 +41,7 @@ namespace WinApp
                     txt_Longitude.Text = $"{root.coord.lon}";
                     txt_Latitude.Text = $"{root.coord.lat}";
 
-                    txt_Temp.Text = $"{Math.Floor(root.main.temp)}°F";
+                    txt_Temp.Text = $"{Math.Floor(root.main.temp)}Â°F";
 
                     txt_Description.Text = $"{root.weather[0].description}";
 
@@ -58,7 +58,7 @@ namespace WinApp
                 this.BackgroundImage = Properties.Resources.overcastClouds;
                 this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             }
-            if (txt_Description.Text == "clear sky")
+            else if (txt_Description.Text == "clear sky")
             {
                 this.BackgroundImage = Properties.Resources.clearSky;
                 this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
