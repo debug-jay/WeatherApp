@@ -202,12 +202,7 @@
         }
 
         #endregion
-        
-        private void SetBackroundOvercast()
-        {
-            this.BackgroundImage = Properties.Resources.overcastClouds;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-        }
+       
 
         private Button btn_Main;
         private TextBox txt_ZipCode;

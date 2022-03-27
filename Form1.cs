@@ -34,11 +34,9 @@ namespace WinApp
                 }
                 else
                 {
-                    //MessageBox.Show(response.Content);
 
                     Weather.root root = JsonConvert.DeserializeObject<Weather.root>(response.Content.ToString());
 
-                    Form1 form1;
 
                     txt_Longitude.Text = $"{root.coord.lon}";
                     txt_Latitude.Text = $"{root.coord.lat}";
@@ -47,15 +45,25 @@ namespace WinApp
 
                     txt_Description.Text = $"{root.weather[0].description}";
 
-                    
-                    if(txt_Description.Text == "overcast clouds")
-                    {
-                        SetBackroundOvercast();
-                    }
+                    getBackround();
+                   
                 }
             }
-
-
         }
+
+        private void getBackround()
+        {
+            if (txt_Description.Text == "overcast clouds")
+            {
+                this.BackgroundImage = Properties.Resources.overcastClouds;
+                this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            }
+            if (txt_Description.Text == "clear sky")
+            {
+                this.BackgroundImage = Properties.Resources.clearSky;
+                this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            }
+        }
+
     }
 }

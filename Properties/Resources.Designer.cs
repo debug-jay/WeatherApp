@@ -63,6 +63,16 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clearSky {
+            get {
+                object obj = ResourceManager.GetObject("clearSky", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mainImage {
             get {
                 object obj = ResourceManager.GetObject("mainImage", resourceCulture);

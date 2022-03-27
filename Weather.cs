@@ -17,7 +17,6 @@ namespace WinApp
         public class weather
         {
             public string description { get; set; }
-            public Image icon { get; set; }
         }
 
         public class main
