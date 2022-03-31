@@ -39,6 +39,8 @@ namespace WinApp
 
             public main main { get; set; }
 
+            public long dt { get; set; }
+
             public sys sys { get; set; }
         }
     }
