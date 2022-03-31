@@ -1,4 +1,7 @@
 # WeatherApp
+
+# START
+
 WeatherApp using the OpenWeatherMap API
 
 FOR VIEWING PURPOSES ONLY, EDUCATIONAL PURPOSES ONLY!
