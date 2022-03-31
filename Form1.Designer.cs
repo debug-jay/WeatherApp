@@ -334,7 +334,7 @@
                 this.BackgroundImage = Properties.Resources.clearSky;
                 this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             }
-            else if(txt_Description.Text == "heavy intensity rain")
+            else if(txt_Description.Text.Contains("rain"))
             {
                 this.BackgroundImage = Properties.Resources.heavy_rain;
                 this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
