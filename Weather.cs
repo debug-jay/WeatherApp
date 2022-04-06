@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace WinApp
 {
@@ -33,15 +34,21 @@ namespace WinApp
 
         public class root
         {
+
             public coord coord { get; set; }
             
             public List<weather> weather { get; set; }
 
             public main main { get; set; }
 
+            [JsonProperty(PropertyName = "dt")]
             public long dt { get; set; }
 
             public sys sys { get; set; }
+
+            [JsonProperty(PropertyName = "name")]
+            public string name { get; set; }
+
         }
     }
 }
